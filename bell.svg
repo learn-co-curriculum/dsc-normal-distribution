@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" width="389.4" height="184.2" version="1.1">
+<defs />
+<rect x="83.1" y="0.2" width="220.2" height="168.8" style="color:black; overflow:visible; fill:none; stroke:#cccccc; stroke-width:0.39;" />
+<path d="m 1.7,167.9 c 8.6,0 17.2,-0.1 25.8,-0.3 8.2,-0.2 16.5,-0.6 24.6,-1.6 8.6,-1.1 17.1,-2.9 25.3,-6.2 8.1,-3.3 15.3,-8.3 21.9,-14.1 6.4,-5.7 12.1,-12.6 17,-19.7 5.1,-7.3 9.8,-14.8 14.2,-22.6 4.5,-8 8.8,-16.1 13.1,-24.2 4.2,-8 8.4,-15.9 12.8,-23.8 4.3,-7.7 8.9,-15.3 14.3,-22.2 2.8,-3.6 5.9,-6.8 9.3,-9.6 3.4,-2.8 7.4,-4.4 11.7,-4.7 4.3,-0.3 8.4,1.9 11.9,4.3 3.6,2.4 6.5,5.9 9.3,9.2 5.7,6.9 10.2,14.7 14.7,22.5 4.3,7.5 8.3,15.3 12.4,22.9 4.3,8.1 8.5,16.2 13,24.2 4.4,7.7 8.9,15.3 14,22.6 5.2,7.4 10.9,14.4 17.4,20.6 6.4,6.1 13.8,10.8 21.8,14.3 7.7,3.4 16.1,5.3 24.3,6.3 8.5,1.1 17,1.5 25.5,1.8 8.4,0.3 16.9,0.3 25.3,0.4 0.4,0 0.9,0 1.3,0" style="fill:none; stroke:#005c94; stroke-width:3.33; stroke-linecap:round; stroke-linejoin:round;" />
+<g transform="matrix(0.5,0,0,0.5,-493.375,-27.6649)" />
+<text x="80.4" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">100</text>
+<text x="117" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">120</text>
+<text x="152.8" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">140</text>
+<text x="190.8" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">160</text>
+<text x="226.6" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">180</text>
+<text x="265.5" y="184" style="font-family:Verdana; font-size:14.2px; fill:#013397; stroke-width:0.5;">200</text>
+<text x="66.6" y="173.8" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">0</text>
+<text x="62.6" y="141.3" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">10</text>
+<text x="57.7" y="108.7" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">20</text>
+<text x="57.6" y="76.3" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">30</text>
+<text x="58" y="44.2" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">40</text>
+<text x="57.9" y="11.7" style="font-family:Verdana; font-size:14.2px; fill:#986601; stroke-width:0.5;">50</text>
+<polygon points="29.12,254.95 55.08,254.95 55.08,264.08 29.12,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:0.59;" transform="matrix(0.7099,0,0,2.00983,70.4549,-361.729)" />
+<polygon points="55.08,264.08 55.08,245.81 81.03,245.81 81.03,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:0.55;" transform="matrix(0.7099,0,0,2.35193,70.4549,-452.075)" />
+<polygon points="81.03,264.08 81.03,218.41 106.98,218.41 106.98,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:0.71;" transform="matrix(0.7099,0,0,1.39963,70.4549,-200.59)" />
+<polygon points="106.98,154.47 132.94,154.47 132.94,264.08 106.98,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:0.85;" transform="matrix(0.7099,0,0,0.992835,70.4549,-93.1509)" />
+<polygon points="158.89,172.74 158.89,264.08 132.94,264.08 132.94,172.74 " style="fill:#ffff3e; stroke:black; stroke-width:0.69;" transform="matrix(0.7099,0,0,1.4708,70.4549,-219.383)" />
+<polygon points="158.89,264.08 158.89,90.54 184.84,90.54 184.84,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:0.91;" transform="matrix(0.7099,0,0,0.85727,70.4549,-57.3639)" />
+<polygon points="184.84,264.08 184.84,17.47 210.79,17.47 210.79,264.08 " style="fill:#ffff3e; stroke:black; stroke-width:1.17;" transform="matrix(0.7099,0,0,0.522125,70.4549,31.1401)" />
+<polygon points="236.75,145.34 236.75,264.08 210.79,264.08 210.79,145.34 " style="fill:#ffff3e; stroke:black; stroke-width:0.94;" transform="matrix(0.7099,0,0,0.807005,70.4549,-44.0889)" />
+<polygon points="262.7,264.08 236.75,264.08 236.75,209.28 262.7,209.28 " style="fill:#ffff3e; stroke:black; stroke-width:0.73;" transform="matrix(0.7099,0,0,1.34783,70.4549,-186.912)" />
+<polygon points="288.65,227.54 288.65,264.08 262.7,264.08 262.7,227.54 " style="fill:#ffff3e; stroke:black; stroke-width:0.87;" transform="matrix(0.7099,0,0,0.933755,70.4549,-77.5609)" />
+<polygon points="288.65,227.54 288.65,264.08 262.7,264.08 262.7,227.54 " style="fill:#ffff3e; stroke:black; stroke-width:1.39;" transform="matrix(0.7099,0,0,0.365569,88.9049,72.4851)" />
+<text x="257.7" y="35.5" style="font-family:Georgia; font-size:24px; font-style:italic; color:black; overflow:visible; fill:#005c94; stroke-width:0.5px;">&quot;Bell Curve&quot;</text>
+<g transform="translate(-0.011282,1.17646)">
+<path d="m 260.7,35 c -2.1,0.1 -4,1 -5.9,2 -0.3,0.2 -1.9,1.1 -0.6,0.3 0.4,-0.3 2,-1.1 0.8,-0.4 -0.7,0.4 -2.3,1.3 -2.4,1.4 0.5,-0.3 1.7,-1 1.8,-1 -2.7,1.6 -5.1,3.6 -7.6,5.4 -2.8,2.1 -5.6,4.2 -8.4,6.2 -1.3,-0.4 -2.5,-0.9 -3.8,-1.3 2.3,-1.9 4.9,-3.5 7.2,-5.4 2.7,-2 5.4,-4.1 8.1,-6 0.9,-0.6 2.8,-1.7 3.1,-1.9 -0.5,0.3 -2.2,1.3 -0.9,0.6 3.1,-1.9 6.5,-3.6 10.2,-3.5 -0.5,1.2 -1.1,2.4 -1.6,3.7 z" style="color:black; overflow:visible; fill:#005c94; stroke-width:3.33;" />
+<path d="m 246.6,33.3 c -0.9,2.4 -2,4.7 -2.9,7.1 -1.1,2.5 -2.8,4.7 -4.4,6.9 -1.3,-0.3 -2.6,-0.6 -3.9,-0.9 1.7,-1.9 3.2,-4.1 4.4,-6.3 0.7,-1.6 1.3,-3.2 2.1,-4.8 0.5,-0.6 0.4,-2.1 1.2,-2.1 1.2,0 2.4,0 3.6,0 z" style="color:black; overflow:visible; fill:#005c94; stroke-width:3.33;" />
+<path d="m 238.9,45.2 c 2.3,-0.7 4.7,-1.1 7,-1.7 2.3,-0.5 4.7,-0.7 7,-1 -0.5,1.3 -0.9,2.5 -1.4,3.8 -2.7,0.3 -5.3,0.6 -7.9,1.3 -1.8,0.4 -3.7,0.8 -5.5,1.3 -0.9,0.4 -0.3,-0.5 -0.2,-0.9 0.3,-0.9 0.6,-1.9 0.9,-2.8 z" style="color:black; overflow:visible; fill:#005c94; stroke-width:3.33;" />
+</g>
+<g transform="translate(-576.915,-530.48)" />
+<path d="m 76.9,6.8 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+<path d="m 76.9,39.2 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+<path d="m 76.9,71.7 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+<path d="m 76.9,104.1 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+<path d="m 76.9,136.6 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+<path d="m 76.9,169 h 6.3" style="fill:none; stroke:black; stroke-width:1px;" />
+</svg>
