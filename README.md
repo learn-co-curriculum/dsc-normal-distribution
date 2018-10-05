@@ -67,10 +67,10 @@ Above characteristics can be better visualized with a slightly more detailed des
 
 
 
-<img src="normalsd.png" width = 500>
+<img src="normalsd.jpg" width = 700>
 
 
-This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. 
+This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (3 sd+) can be considered "interesting events" as their probability of occurrence is less than usual. Or in some cases, you consider them as outliers due to noise or error of measurement. It all depends on your analysis question.  
 
 #### Why so popular !
 
@@ -80,7 +80,7 @@ Here are some more reasons why these are so popular among data scientists:
 
 An amazingly vast number of natural processes naturally follows the Gaussian distribution. A simple normal distribution gives the best model approximation for natural processes like weight, height, blood pressure, IQ levels of human beings (key in social sciences). Errors committed during some measurements are also found to be naturally distributed so they can be modeled and isolated with ease. The income, expenditure and other social attributes of masses are normally distributed etc. 
 
-![](https://pbs.twimg.com/media/B4Uo2_6IcAA85xJ.png)
+<img src="smart.jpg" width=400>
 
 
 ### Central Limit Theorem
@@ -92,6 +92,7 @@ The theorem provides a reason why many natural phenomena follow Gaussian distrib
 
 The key takeaway from central limit theorem is that fact that is allows different distributions to be processed as a normal distribution, even when they do not fulfill normality requirements shown above. We shall discuss this further when we talk about hypothesis testing 
 
+[Here is an interesting youtube video highlighting this phenomenon](https://www.youtube.com/watch?v=AUSKTk9ENzg) for now. We will consider this in detail later. 
 
 ### Simplified Computation
 
