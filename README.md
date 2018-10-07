@@ -9,6 +9,7 @@ Students would be able to :
 * Understand the characteristics of a Gaussian Distribution
 * Identify examples in the real world that follow a Gaussian distribution
 * Explain why the Gaussian Distribution is so important to data scientists
+* How to generate and visualize normal distributions in Python
 
 
 ### Introduction
@@ -101,6 +102,30 @@ When undergoing transformations, a number of distributions tend to change their 
 For every Gaussian model approximation, there may exist a complex multi-parameter distribution that gives better approximation. But still Gaussian is preferred because it makes the math a lot simpler!
 
 We shall explore normal distribution in great details through the course and how to define, process and visualize them in python. 
+
+### Normal Distributions in Python 
+
+In python, NumPy module provides a ton of methods to generate and inspect random variables. 
+> The NumPy nickname for the normal distribution is **norm**. 
+
+Here is how we can generate a random normal distribution by providing its parameters mu and sigma (mean and sd) to `np.random.norm()`, along with N (number of values to be generated for the normal distribution).
+
+
+```python
+import numpy as np
+import seaborn as sns
+
+mu, sigma = 0.5, 0.1
+N = 1000
+s = np.random.normal(mu, sigma, N)
+sns.distplot(s);
+```
+
+
+![png](index_files/index_16_0.png)
+
+
+The density function of a normal distribution can also be plotted using matplotlib line plot and using the formula given above. We shall try this in our lab next.
 
 ## Summary 
 
