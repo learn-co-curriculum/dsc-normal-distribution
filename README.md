@@ -1,18 +1,19 @@
 
 # Normal/Gaussian Distribution
 
+## Introduction
+
 For data scientists and machine learning professionals, gaussian (or normal) distribution stands out as one of the most commonly used distribution model. This lesson provides an introduction to gaussian distribution, its characteristics and its significance towards data analytics. 
 
 ## Objectives
-Students would be able to :
+You will be able to:
 
 * Understand the characteristics of a Gaussian Distribution
 * Identify examples in the real world that follow a Gaussian distribution
 * Explain why the Gaussian Distribution is so important to data scientists
 * How to generate and visualize normal distributions in Python
 
-
-### Introduction
+## The normal distribution
 The normal distribution is the most important and most widely used distribution in statistics and analytics. It is also called the "bell curve," due to its shape or the "Gaussian curve" after the mathematician Karl Friedrich Gauss. This shape results in plotting normally distributed data as a histogram. A smoothing function may be used to smooth the outer edges of distribution to achieve the said "bell" shape as shown below. 
 
 ![](bell.svg)
@@ -21,16 +22,13 @@ Here is a first simple definition for normal distribution like shown above:
 
 > Normal distribution is symmetrical and its mean, median and mode are equal. 
 
-### Measures of Center and Spread 
+## Measures of Center and Spread 
 
 If you remember skewness, you would recognize there is no skew in a perfectly normal distribution.  It is **centered around its mean**.
 
 There could possibly be many normal distributions based on how they are defined. Normal distributions can differ in their means and in their standard deviations. 
 
 <img src="3normal.png" width = 400>
-
-
-
 
 The figure above shows four normal distributions. 
 * The green distribution has a mean of -2 and a standard deviation of 0.5 
@@ -43,7 +41,7 @@ These as well as all other normal distributions are symmetric with relatively hi
 <img src="cdf.png" width = 400>
 
 
-### Normal Density Function
+## Normal Density Function
 The density (number of values) of the normal distribution is reflected as the height for a given value on the x axis is shown below. A formula describing a normal distribution in terms of its tendencies of center and spread can be defined as:
 
 <img src = "formula.jpg" width=300>
@@ -51,7 +49,7 @@ The density (number of values) of the normal distribution is reflected as the he
 
 Do not worry if this expression confuses you at this stage. The key takeaway here is to understand that normal distributions can be defined, created, processed and visualized only using two parameters as shown above, mean and standard deviation (pi and e are the constants in this equation). 
 
-### Normal Characteristics
+## Normal Characteristics
 
 For now , we will identify normal distributions with following key characteristics. 
 
@@ -73,7 +71,7 @@ Above characteristics can be better visualized with a slightly more detailed des
 
 This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (3 sd+) can be considered "interesting events" as their probability of occurrence is less than usual. Or in some cases, you consider them as outliers due to noise or error of measurement. It all depends on your analysis question.  
 
-#### Why so popular !
+## Why so popular?
 
 Here are some more reasons why these are so popular among data scientists:
 
@@ -103,7 +101,7 @@ For every Gaussian model approximation, there may exist a complex multi-paramete
 
 We shall explore normal distribution in great details through the course and how to define, process and visualize them in python. 
 
-### Normal Distributions in Python 
+## Normal Distributions in Python 
 
 In python, NumPy module provides a ton of methods to generate and inspect random variables. 
 > The NumPy nickname for the normal distribution is **norm**. 
