@@ -1,9 +1,9 @@
 
-# Normal/Gaussian Distribution
+# The Normal Distribution
 
 ## Introduction
 
-For data scientists and machine learning professionals, gaussian (or normal) distribution stands out as one of the most commonly used distribution model. This lesson provides an introduction to gaussian distribution, its characteristics and its significance towards data analytics. 
+For data scientists and machine learning professionals, Normal (also referred to as Gaussian) distribution stands out as one of the most commonly used distribution models. This lesson provides an introduction to the normal distribution, its characteristics and its significance in data science. 
 
 ## Objectives
 You will be able to:
@@ -13,83 +13,111 @@ You will be able to:
 * Explain why the Gaussian Distribution is so important to data scientists
 * How to generate and visualize normal distributions in Python
 
-## The normal distribution
-The normal distribution is the most important and most widely used distribution in statistics and analytics. It is also called the "bell curve," due to its shape or the "Gaussian curve" after the mathematician Karl Friedrich Gauss. This shape results in plotting normally distributed data as a histogram. A smoothing function may be used to smooth the outer edges of distribution to achieve the said "bell" shape as shown below. 
+## The Normal Distribution
+The normal distribution is the most important and most widely used distribution in statistics and data science. It is also called the "bell curve," due to its bell shape, or the "Gaussian curve" after the German mathematician Karl Friedrich Gauss.
 
-![](bell.svg)
+Recall our NYC weather distribution. This is a classic example of a normal distribution. The idea is that there is sort of an expectation around what the temperature will be on June 1 (80 Degrees Fahrenheit), and that temperatures much lower or much higher are less likely the further they move away from this expected temperature. This type of behavior is present in many phenomenons, as you'll see later.
 
-Here is a first simple definition for normal distribution like shown above: 
+![](images/histogram_NYC_weather.png)
 
-> Normal distribution is symmetrical and its mean, median and mode are equal. 
+The normal distribution is **a continuous distribution**. In practice though, you'll see many discrete distributions that follow a bell curve shape:
+- The observed values are actually discrete. For example, human IQ follows a normal distribution, but IQ is only specified up to the unit digit level, eg an IQ of 90, 91, or 92.
+- The values in our distribution are actually continuous (eg. our temperature example) but recorded up to a certain constant because there is (obviously) no "exact" thermometer that measures temperature up to an infinite amount of digits.
 
-## Measures of Center and Spread 
+Even though the IQ level is not factually recorded as a continuous variable, you'll see that the distribution is generally represented as a smooth curve!
 
-If you remember skewness, you would recognize there is no skew in a perfectly normal distribution.  It is **centered around its mean**.
 
-There could possibly be many normal distributions based on how they are defined. Normal distributions can differ in their means and in their standard deviations. 
+<img src="images/iq_bell_curve.gif" width = "550">
 
-<img src="3normal.png" width = 400>
 
-The figure above shows four normal distributions. 
+
+## The Probability Density Function
+
+The density function equation is given by the following expression:
+
+$$ \large N(x) = \dfrac{1}{\sigma \sqrt {2\pi }}e^{-\dfrac{(x-\mu)^2}{2\sigma^2}}$$
+
+Here, 
+- $\mu$ is the mean
+- $\sigma$ is the standard deviation
+- $\pi \approx 3.14159 $ 
+- $ e \approx 2.71828 $
+
+Don't worry if your head is spinning right now. Don't worry about the formula, what you really need to remember is that:
+- A normal distribution has 2 key parameters, $\mu$ and $\sigma$, which define the mean and the spread of the distribution
+
+- If you apply our formulas of expected values and variance seen in the PDF lesson before, where $X \sim N(x)$:
+    - $ E(X) = \int_{- \infty}^{+ \infty} p(x)x dx = \mu $
+    - $ E((X-\mu)^2) = \int_{- \infty}^{+ \infty} p(x)(x-\mu)^2 dx = \sigma^2$
+    
+  where $\mu$ and $\sigma$ are as specified in the formula of $N(x)$
+
+
+
+## Mean and Standard Deviation
+
+Here is a first simple definition for normal distributions:
+
+> **The Normal Distribution is symmetrical and its mean, median and mode are equal.**
+
+A normal distribution is **centered around its mean**, so the distribution is not skewed (you'll learn more about skewness later).  This doesn't mean that normal distributions cannot appear in different shapes and forms. How exactly the distribution behaves depends on the 2 key parameters, as specified before: the **mean** and the **standard deviation**.
+
+<img src="images/3normal.png" width ="600">
+
+This figure shows four normal distributions. 
+
 * The green distribution has a mean of -2 and a standard deviation of 0.5 
 * The distribution in blue has a mean of 0 and a standard deviation of 0.2.
 * The distribution in red has a mean of 0 and a standard deviation of 1. 
 * The orange distribution has a mean 0 but a high spread with standard deviation 5.
 
-These as well as all other normal distributions are symmetric with relatively higher densities of values at the center of the distribution and relatively lower density in the tails. We can also show above normal distributions using cdf approach we saw earlier. Here is what above distributions would look like as a function of their cumulative probabilities. 
+All these distributions have the following properties in common:
+- They are symmetric,
+- They have relatively higher densities of values at the center of the distribution and relatively lower density in the tails
 
-<img src="cdf.png" width = 400>
-
-
-## Normal Density Function
-The density (number of values) of the normal distribution is reflected as the height for a given value on the x axis is shown below. A formula describing a normal distribution in terms of its tendencies of center and spread can be defined as:
-
-<img src = "formula.jpg" width=300>
+The CDFs of these distributions are shown below:
 
 
-Do not worry if this expression confuses you at this stage. The key takeaway here is to understand that normal distributions can be defined, created, processed and visualized only using two parameters as shown above, mean and standard deviation (pi and e are the constants in this equation). 
+<img src="images/CDF_normal.png" width="600">
 
-## Normal Characteristics
+## Some More Characteristics of the Normal Distribution
 
-For now , we will identify normal distributions with following key characteristics. 
+Let's summarize the key characteristics of the normal distribution below:
 
-* Normal distributions are symmetric around their mean.
-* The mean, median, and mode of a normal distribution are equal.
-* The area under the bell curve is equal to 1.0.
-* Normal distributions are denser in the center and less dense in the tails.
-* Normal distributions are defined by two parameters, the mean (μ) and the standard deviation (σ).
-* Around 68% of the area of a normal distribution is within one standard deviation of the mean 
-(μ - σ to μ + σ)
-* Approximately 95% of the area of a normal distribution is within two standard deviations of the mean ((μ - 2σ to μ + 2σ).
-
-Above characteristics can be better visualized with a slightly more detailed description below. Here the spread is differentiated between different levels of deviation. If a value is found in the red region, it is termed as "within 1 standard deviation". Blue and green regions and 2 and 3 standard deviation away from mean respectively.
+* Normal distributions are symmetric around their mean
+* The mean, median, and mode of a normal distribution are equal
+* The area under the bell curve is equal to 1.0
+* Normal distributions are denser in the center and less dense in the tails
+* Normal distributions are defined by two parameters, the mean ($\mu$) and the standard deviation ($\sigma$).
+* Around 68% of the area of a normal distribution is within _one standard deviation_ of the mean 
+($(\mu-\sigma)$ to $(\mu + \sigma)$)
+* Approximately 95% of the area of a normal distribution is within two standard deviations of the mean ($(\mu-2\sigma)$ to $(\mu + 2\sigma)$).
 
 
+Let's look at the image below to get a better sense of the two last statements. In this image, the spread is differentiated between levels of deviation.
 
-<img src="normalsd.jpg" width = 700>
+<img src="images/normal_sd.jpg" width ="800">
 
+This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of the mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (more than 3 standard deviations) can be considered "interesting events" as their probability of occurrence is very low (1 occurrence in about ~300!). In other cases, you'll consider them as outliers due to noise or error of measurement. It all depends on your analysis question. 
 
-This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (3 sd+) can be considered "interesting events" as their probability of occurrence is less than usual. Or in some cases, you consider them as outliers due to noise or error of measurement. It all depends on your analysis question.  
+Keeping this in mind, have another look at the IQ distribution and identify "extreme events" in terms of IQ!
 
 ## Why so popular?
 
-Here are some more reasons why these are so popular among data scientists:
+In this section, you'll learn about some reasons why normal distributions are so popular among data scientists:
 
 ### Ubiquitous in Natural Phenomena
 
-An amazingly vast number of natural processes naturally follows the Gaussian distribution. A simple normal distribution gives the best model approximation for natural processes like weight, height, blood pressure, IQ levels of human beings (key in social sciences). Errors committed during some measurements are also found to be naturally distributed so they can be modeled and isolated with ease. The income, expenditure and other social attributes of masses are normally distributed etc. 
-
-<img src="smart.jpg" width=400>
-
+An amazingly vast number of natural processes naturally follows the Gaussian distribution. A simple normal distribution gives the best model approximation for natural processes like weight, height, blood pressure, etc. Errors committed during some measurements are also found to be normally distributed so they can be modeled and isolated with ease. The income, expenditure and other social attributes of masses are often normally distributed as well.
 
 ### Central Limit Theorem
 
-Central limit theorem states: 
->When we add large number of independent random variables, irrespective of the original distribution of these variables, their normalized sum tends towards a Gaussian distribution.
+The Central Limit Theorem states: 
+>When you add **a large number** of independent random variables, irrespective of the original distribution of these variables, **their sum tends towards a Gaussian distribution**.
 
 The theorem provides a reason why many natural phenomena follow Gaussian distribution.
 
-The key takeaway from central limit theorem is that fact that is allows different distributions to be processed as a normal distribution, even when they do not fulfill normality requirements shown above. We shall discuss this further when we talk about hypothesis testing 
+The key takeaway from central limit theorem is that fact that it allows different distributions to be processed as a normal distribution, even when they do not fulfill normality requirements shown above. We'll discuss this further when we talk about hypothesis testing 
 
 [Here is an interesting youtube video highlighting this phenomenon](https://www.youtube.com/watch?v=AUSKTk9ENzg) for now. We will consider this in detail later. 
 
@@ -97,16 +125,13 @@ The key takeaway from central limit theorem is that fact that is allows differen
 
 When undergoing transformations, a number of distributions tend to change their nature and may result as a totally new distribution. With normal distributions, we can add random variables, take their product or apply any other advanced transformations like Fourier and Convolution - the resulting distribution will always be normal. 
 
-For every Gaussian model approximation, there may exist a complex multi-parameter distribution that gives better approximation. But still Gaussian is preferred because it makes the math a lot simpler!
-
-We shall explore normal distribution in great details through the course and how to define, process and visualize them in python. 
+For every Gaussian model approximation, there may exist a complex multi-parameter distribution that gives a better approximation than the Normal distribution. Even then a Gaussian is often the preferred distribution to use because it makes the math a lot simpler!
 
 ## Normal Distributions in Python 
 
-In python, NumPy module provides a ton of methods to generate and inspect random variables. 
-> The NumPy nickname for the normal distribution is **norm**. 
+In Python, the NumPy module provides a ton of methods to generate and inspect random variables. 
 
-Here is how we can generate a random normal distribution by providing its parameters mu and sigma (mean and sd) to `np.random.norm()`, along with N (number of values to be generated for the normal distribution).
+You can generate a random normal distribution by providing its parameters $\mu$ and $\sigma$ (mean and sd) to `np.random.norm()`, along with $n$ (number of values to be generated for the normal distribution).
 
 
 ```python
@@ -114,17 +139,17 @@ import numpy as np
 import seaborn as sns
 
 mu, sigma = 0.5, 0.1
-N = 1000
-s = np.random.normal(mu, sigma, N)
+n = 1000
+s = np.random.normal(mu, sigma, n)
 sns.distplot(s);
 ```
 
 
-![png](index_files/index_16_0.png)
+![png](index_files/index_1_0.png)
 
 
-The density function of a normal distribution can also be plotted using matplotlib line plot and using the formula given above. We shall try this in our lab next.
+The density function of a normal distribution can also be plotted using a matplotlib _line plot_ and using the formula given above. You'll try to do this in the next lab.
 
 ## Summary 
 
-This lesson provides an introduction to normal distributions as the common distributions in the field of statistics and data analysis. We looked at the key characteristics of normal distributions, their density function based on mean and standard deviations and briefly discussed the reasons behind their ubiquitous nature. 
+This lesson provides an introduction to normal distributions, the most common distribution family in the field of statistics and data analysis. You learned about the key characteristics of normal distributions, their density function based on mean and standard deviations, and briefly discussed the reasons behind their ubiquitous nature. 
