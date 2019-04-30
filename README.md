@@ -62,14 +62,14 @@ Here is a first simple definition for normal distributions:
 
 A normal distribution is **centered around its mean**, so the distribution is not skewed (you'll learn more about skewness later).  This doesn't mean that normal distributions cannot appear in different shapes and forms. How exactly the distribution behaves depends on the 2 key parameters, as specified before: the **mean** and the **standard deviation**.
 
-<img src="images/3normal.png" width ="600">
+<img src="images/normal_plt.png" width ="750">
 
 This figure shows four normal distributions. 
 
-* The green distribution has a mean of -2 and a standard deviation of 0.5 
-* The distribution in blue has a mean of 0 and a standard deviation of 0.2.
-* The distribution in red has a mean of 0 and a standard deviation of 1. 
-* The orange distribution has a mean 0 but a high spread with standard deviation 5.
+* The green distribution has a mean of 0 and a standard deviation of 0.4 
+* The distribution in blue has a mean of 0 and a standard deviation of 1.
+* The distribution in red has a mean of 0 and a high spread with standard deviation of 3. 
+* The orange distribution has a mean of 2 and a standard deviation of 0.5.
 
 All these distributions have the following properties in common:
 - They are symmetric,
@@ -78,7 +78,7 @@ All these distributions have the following properties in common:
 The CDFs of these distributions are shown below:
 
 
-<img src="images/CDF_normal.png" width="600">
+<img src="images/cumul_normal_plt.png" width="750">
 
 ## Some More Characteristics of the Normal Distribution
 
@@ -96,7 +96,7 @@ Let's summarize the key characteristics of the normal distribution below:
 
 Let's look at the image below to get a better sense of the two last statements. In this image, the spread is differentiated between levels of deviation.
 
-<img src="images/normal_sd.jpg" width ="800">
+<img src="images/normal_sd.jpg" width ="700">
 
 This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of the mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (more than 3 standard deviations) can be considered "interesting events" as their probability of occurrence is very low (1 occurrence in about ~300!). In other cases, you'll consider them as outliers due to noise or error of measurement. It all depends on your analysis question. 
 
