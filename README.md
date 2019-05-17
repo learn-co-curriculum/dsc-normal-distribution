@@ -27,7 +27,7 @@ The normal distribution is **a continuous distribution**. In practice though, yo
 Even though the IQ level is not factually recorded as a continuous variable, you'll see that the distribution is generally represented as a smooth curve!
 
 
-<img src="images/iq_bell_curve.gif" width = "550">
+<img src="images/iq_bell.png" width = "650">
 
 
 
@@ -96,7 +96,7 @@ Let's summarize the key characteristics of the normal distribution below:
 
 Let's look at the image below to get a better sense of the two last statements. In this image, the spread is differentiated between levels of deviation.
 
-<img src="images/normal_sd.jpg" width ="700">
+<img src="images/normal_sd.png" width ="700">
 
 This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are within 1 standard deviation of the mean, 95% within 2 standard deviations and 99.7 % within 3 standard deviations. So normally distributed data is considered ideal for analysis due to this simplicity of description. Values in the extreme of tails (more than 3 standard deviations) can be considered "interesting events" as their probability of occurrence is very low (1 occurrence in about ~300!). In other cases, you'll consider them as outliers due to noise or error of measurement. It all depends on your analysis question. 
 
