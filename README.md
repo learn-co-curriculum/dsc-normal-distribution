@@ -3,28 +3,28 @@
 
 ## Introduction
 
-For data scientists and machine learning professionals, Normal (also referred to as Gaussian) distribution stands out as one of the most commonly used distribution models. This lesson provides an introduction to the normal distribution, its characteristics and its significance in data science. 
+For data scientists and machine learning professionals, the normal (also referred to as Gaussian) distribution stands out as one of the most commonly used distribution models. This lesson provides an introduction to the normal distribution, its characteristics, and its significance in data science. 
 
 ## Objectives
 You will be able to:
 
-* Understand the characteristics of a Gaussian Distribution
-* Identify examples in the real world that follow a Gaussian distribution
-* Explain why the Gaussian Distribution is so important to data scientists
+* Understand the characteristics of a normal Distribution
+* Identify examples in the real world that follow a normal distribution
+* Explain why the normal distribution is so important to data scientists
 * How to generate and visualize normal distributions in Python
 
 ## The Normal Distribution
 The normal distribution is the most important and most widely used distribution in statistics and data science. It is also called the "bell curve," due to its bell shape, or the "Gaussian curve" after the German mathematician Karl Friedrich Gauss.
 
-Recall our NYC weather distribution. This is a classic example of a normal distribution. The idea is that there is sort of an expectation around what the temperature will be on June 1 (80 Degrees Fahrenheit), and that temperatures much lower or much higher are less likely the further they move away from this expected temperature. This type of behavior is present in many phenomenons, as you'll see later.
+Recall our NYC weather distribution. This is a classic example of a normal distribution. The idea is that there is sort of an expectation around what the temperature will be on June 1 (80 degrees Fahrenheit) and that temperatures much lower or much higher are less likely the further they move away from this expected temperature. This type of behavior is present in many phenomenons, as you'll see later.
 
 ![](images/histogram_NYC_weather.png)
 
 The normal distribution is **a continuous distribution**. In practice though, you'll see many discrete distributions that follow a bell curve shape:
-- The observed values are actually discrete. For example, human IQ follows a normal distribution, but IQ is only specified up to the unit digit level, eg an IQ of 90, 91, or 92.
-- The values in our distribution are actually continuous (eg. our temperature example) but recorded up to a certain constant because there is (obviously) no "exact" thermometer that measures temperature up to an infinite amount of digits.
+- The observed values are actually discrete. For example, human IQ follows a normal distribution, but IQ is only specified up to the unit digit level, e.g. an IQ of 90, 91, or 92.
+- The values in our distribution are actually continuous (e.g. our temperature example) but recorded up to a certain constant because there is (obviously) no "exact" thermometer that measures temperature up to an infinite amount of digits.
 
-Even though the IQ level is not factually recorded as a continuous variable, you'll see that the distribution is generally represented as a smooth curve!
+Even though the IQ level is not actually recorded as a continuous variable, you'll see that the distribution is generally represented as a smooth curve!
 
 
 <img src="images/iq_bell.png" width = "650">
@@ -44,7 +44,7 @@ Here,
 - $ e \approx 2.71828 $
 
 Don't worry if your head is spinning right now. Don't worry about the formula, what you really need to remember is that:
-- A normal distribution has 2 key parameters, $\mu$ and $\sigma$, which define the mean and the spread of the distribution
+- A normal distribution has 2 key parameters, $\mu$ and $\sigma$, which define the mean and the spread of the distribution, respectively.
 
 - If you apply our formulas of expected values and variance seen in the PDF lesson before, where $X \sim N(x)$:
     - $ E(X) = \int_{- \infty}^{+ \infty} p(x)x dx = \mu $
@@ -102,30 +102,30 @@ This forms a 68-95-99.7 rule, i.e., 68% values of a normal distribution are with
 
 Keeping this in mind, have another look at the IQ distribution and identify "extreme events" in terms of IQ!
 
-## Why so popular?
+## Why So Popular?
 
 In this section, you'll learn about some reasons why normal distributions are so popular among data scientists:
 
 ### Ubiquitous in Natural Phenomena
 
-An amazingly vast number of natural processes naturally follows the Gaussian distribution. A simple normal distribution gives the best model approximation for natural processes like weight, height, blood pressure, etc. Errors committed during some measurements are also found to be normally distributed so they can be modeled and isolated with ease. The income, expenditure and other social attributes of masses are often normally distributed as well.
+An amazingly vast number of natural processes naturally follow the normal distribution. A simple normal distribution gives the best model approximation for natural processes like weight, height, blood pressure, etc. Errors committed during some measurements are also found to be normally distributed so they can be modeled and isolated with ease. The income, expenditure and other social attributes of masses are often normally distributed as well.
 
 ### Central Limit Theorem
 
 The Central Limit Theorem states: 
->When you add **a large number** of independent random variables, irrespective of the original distribution of these variables, **their sum tends towards a Gaussian distribution**.
+>When you add **a large number** of independent random variables, irrespective of the original distribution of these variables, **their sum tends towards a normal distribution**.
 
-The theorem provides a reason why many natural phenomena follow Gaussian distribution.
+The theorem provides a reason why many natural phenomena follow a normal distribution.
 
-The key takeaway from central limit theorem is that fact that it allows different distributions to be processed as a normal distribution, even when they do not fulfill normality requirements shown above. We'll discuss this further when we talk about hypothesis testing 
+The key takeaway from the central limit theorem is that it allows different distributions to be processed as a normal distribution, even when they do not fulfill the normality requirements shown above. We'll discuss this further when we talk about hypothesis testing 
 
 [Here is an interesting youtube video highlighting this phenomenon](https://www.youtube.com/watch?v=AUSKTk9ENzg) for now. We will consider this in detail later. 
 
 ### Simplified Computation
 
-When undergoing transformations, a number of distributions tend to change their nature and may result as a totally new distribution. With normal distributions, we can add random variables, take their product or apply any other advanced transformations like Fourier and Convolution - the resulting distribution will always be normal. 
+When undergoing transformations, a number of distributions tend to change their nature and may result in a totally new distribution. With normal distributions, we can add random variables, take their product or apply any other advanced transformations like Fourier and Convolution - the resulting distribution will always be normal. 
 
-For every Gaussian model approximation, there may exist a complex multi-parameter distribution that gives a better approximation than the Normal distribution. Even then a Gaussian is often the preferred distribution to use because it makes the math a lot simpler!
+For every normal model approximation, there may exist a complex multi-parameter distribution that gives a better approximation than the normal distribution. Even then a normal distribution is often the preferred distribution to use because it makes the math a lot simpler!
 
 ## Normal Distributions in Python 
 
