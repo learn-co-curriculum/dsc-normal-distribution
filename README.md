@@ -1,4 +1,3 @@
-
 # The Normal Distribution
 
 ## Introduction
@@ -118,8 +117,6 @@ The Central Limit Theorem states:
 The theorem provides a reason why many natural phenomena follow a normal distribution.
 
 The key takeaway from the central limit theorem is that it allows different distributions to be processed as a normal distribution, even when they do not fulfill the normality requirements shown above. We'll discuss this further when we talk about hypothesis testing.
-
-[Here is an interesting youtube video highlighting this phenomenon](https://www.youtube.com/watch?v=AUSKTk9ENzg) for now. We will consider this in detail later. 
 
 ### Simplified Computation
 
