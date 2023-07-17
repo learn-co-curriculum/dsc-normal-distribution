@@ -138,11 +138,13 @@ import seaborn as sns
 mu, sigma = 0.5, 0.1
 n = 1000
 s = np.random.normal(mu, sigma, n)
-sns.distplot(s);
+sns.displot(s);
 ```
 
 
+    
 ![png](index_files/index_1_0.png)
+    
 
 
 The density function of a normal distribution can also be plotted using a matplotlib _line plot_ and using the formula given above. You'll try to do this in the next lab.
